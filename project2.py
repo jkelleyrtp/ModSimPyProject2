@@ -16,8 +16,7 @@ def make_system():
     pass
 
 def make_state():
-    cell_states = ["Uninfected Cells", "Infected Cells", "Dead Cells", "Burst Cell", "Dead"]
-
+    cell_states = ["Uninfected Cells", "Infected Cells", "Dead Cells", "Burst Cell"]
 
     burst_time = 1 hr
     burst_size = 511
