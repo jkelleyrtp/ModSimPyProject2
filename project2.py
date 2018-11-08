@@ -2,19 +2,6 @@ import numpy as np
 import code.voxel_generator as DISPLAY_HANDLER
 import code.compute as COMPUTE
 
-class State:
-    def __init__(self):
-        pass
-
-
-class System:
-    def __init__(self):
-        pass
-
-def make_system():
-
-    pass
-
 def make_state():
     cell_states = ["Uninfected Cells", "Infected Cells", "Dead Cells", "Burst Cell"]
 
@@ -67,10 +54,6 @@ def main():
                                     time = [0, -1],
                                     total_points = 10000
                                     )
-
-    pass
-
-
 
 
 if __name__ == 'main':

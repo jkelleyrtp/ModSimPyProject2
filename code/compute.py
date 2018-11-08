@@ -10,7 +10,6 @@ class simulation:
     def load_update_func_from_file(self, file_name):
         f = open(filename, 'r')
         self.program_text = "".join(f.readlines())
-
         pass
 
     def load_update_func_from_text(self,kernel_code):
@@ -23,12 +22,11 @@ class simulation:
     def run_simulation(self, device_id = -1):
         COMPUTE = _COMPUTE_ENGINE(self.program_text, device_id);
         results = COMPUTE.EXECUTE(self.system, self.state)
-
         pass
 
     def _COMPUTE_ENGINE:
         def __init__(self, program_text, device_id):
-            # Setup OpenCL platformw
+            # Setup OpenCL platform
             platform = cl.get_platforms()
             computes = [platform[0].get_devices()[device_id]]
             print "New context created on", computes
